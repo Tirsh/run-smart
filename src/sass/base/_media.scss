@@ -1,0 +1,144 @@
+ @media (max-width: 991px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .promo {
+        min-height: 560px;
+        padding: 11px 0 50px 0;
+        &__wrapper {
+            margin-top: 60px;
+        }
+    }
+    .advantages {
+        min-height: 425px;
+        padding: 50px 0 40px 0;
+        &__cards {
+            margin-top: 50px;
+        }
+        &__card {
+            width: 250px;
+        }
+    }
+}
+  
+@media (max-width: 767px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header {
+        flex-wrap: wrap;
+        &__official {
+            order: 3;
+            font-size: 10px;            
+            span {
+                display: inline;
+                font-size: 14px;
+            }
+        }
+    }
+    .promo {
+        min-height: 510px;
+        padding: 8px 0 30px 0;
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            margin-top: 12px;
+        }
+        &__icons {
+            margin-top: 40px;
+            width: 350px;
+            gap: 15px;
+        }
+        &__icon {
+            width: 120px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
+    .advantages {
+        &__title {
+            font-size: 20px;
+        }
+        &__cards {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        &__card {
+            width: 260px;
+            .card_title {
+                margin-top: 20px;
+            }
+        }
+    }
+    .button {
+        font-size: 10px;
+        width: 130px;
+        height: 30px;
+    }
+    .button_main {
+        margin-top: 42px;
+        width: 150px;
+    }
+
+}
+  
+@media (max-width: 575px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header {
+        &__logo {
+            width: 160px;
+        }
+        &__phone {
+            font-size: 14px;            
+        }
+        &__official {
+            display: none;
+        }
+    }
+    .promo {
+        min-height: 450px;
+        &__title {
+            font-size: 24px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            text-align: right;
+        }
+        &__icons{
+            width: 300px;
+            img {
+                width: 35px;
+            }
+        }
+        &__icon {
+            font-size: 12px;
+        }
+    }
+    .button {
+        font-size: 8px;
+        width: 100px;
+        height: 20px;
+    }
+    .button_main {
+        margin-top: 35px;
+        width: 130px;
+    }
+    .advantages {
+        &__title {
+            font-size: 18px;
+        }
+    }
+}
