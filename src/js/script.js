@@ -22,7 +22,15 @@
         slideBy: 'page',
         autoplay: false,
         controls: false,
-        nav: false
+        navPosition: 'bottom',
+        responsive: {
+            320: {
+                nav: true,
+              },
+              992: {
+                nav: false
+              }
+          }
     });
     document.querySelector('.prev').addEventListener('click', function () {
         slider.goTo('prev'); 

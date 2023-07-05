@@ -1,0 +1,31 @@
+.reviews {
+    padding-bottom: 48px;
+    &__review {
+        display: flex;
+        gap: 60px;
+    }
+    &__reviewer-photo {
+        max-width: 169px;
+        max-height: 169px;
+    }
+    &__review {
+        margin-top: 60px;
+    }
+    &__reviewer-name {
+        color: #0D0D0D;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+    &__reviewer-experience {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__review-text {
+        margin-top: 10px;
+        color: #0D0D0D;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
