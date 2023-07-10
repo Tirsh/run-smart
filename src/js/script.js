@@ -73,4 +73,41 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('fast');            
         })
     })
+
+    function validateForm(form) {
+        $(form).validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: {
+                    required: true,
+                    minlength: 2
+                  },
+                phone: {                    
+                    required: true,
+                },
+                email: {
+                  required: true,
+                  email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Необходимо ввести имя",
+                    minlength: "Длинна имяни не менее 2 символов"
+                },
+                phone: {                    
+                    required: "Необходимо заполнить поле",
+                },
+                email: {
+                    required: "Необходимо ввести e-mail",
+                    email: "E-mail должен быть в формате name@domain.com"
+                }
+              }
+        })
+    };
+    validateForm('#order form');
+    validateForm('#consultation form');
+    validateForm('#consultation-form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });  
