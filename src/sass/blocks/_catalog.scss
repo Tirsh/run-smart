@@ -126,7 +126,7 @@
             margin-left: 20px;
             padding-right: 20px;
             transition: 0.5s all;  
-            padding-left: 19;
+            padding-left: 19px;
             margin-bottom: 0;
             list-style-type: none;     
             &_active {
@@ -151,22 +151,28 @@
                 }
             }
         }
-        &__back {
+        .catalog-item__back {
+            margin-bottom: 0;
+            position: absolute;
+            list-style: none;
             bottom: 0;
             left: 50%;
             transform: translateX(calc(-50% - 19px));
-            position: absolute;
             display: block;
-            color: $main-color;
             text-align: center;
-            font-size: 14px;
-            font-weight: 500;
-            text-decoration: underline;
-            text-transform: uppercase;
-            &:hover {
+            a {
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: underline;
+                text-transform: uppercase;
                 color: $main-color;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            &::before {
+                display: none;
             }
         }
-
     }
 }
